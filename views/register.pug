@@ -1,0 +1,17 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="utf-8")
+    title Create Account
+    link(rel="stylesheet", href="/css/style.css")
+  body
+    h2 Create New Account
+    form(action="/register", method="POST")
+      label(for="username") Username:
+      input(type="text", name="username", required)
+      br
+      label(for="password") Password:
+      input(type="password", name="password", required)
+      br
+      button(type="submit") Create Account
+      a(href="/login") Back to Login

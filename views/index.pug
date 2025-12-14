@@ -1,0 +1,24 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="utf-8")
+    title= event.title
+    link(rel="stylesheet", href="/css/style.css")
+  body
+    header
+      nav
+        a(href="/") Home |
+        a(href="/attendees") Attendees |
+        a(href="/signup") Sign Up |
+        a(href="/update-account") My Account |
+        button(onclick="window.location.href='/logout'") Log out
+    section.hero
+      img(src="/img/league.png", alt="League of Legends Clash", class="hero-img")
+    section.event-info
+      h1= event.title
+      p.date Date: #{event.date}
+      p.time Time: #{event.time}
+      p.location Location: #{event.location}
+      p.welcome Welcome, #{user}!
+      p.description Join us for an exciting evening of League of Legends Clash! Compete with friends, enjoy team strategies, and have fun.
+  

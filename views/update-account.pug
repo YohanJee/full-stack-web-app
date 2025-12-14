@@ -1,0 +1,27 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="utf-8")
+    title Update Account
+    link(rel="stylesheet", href="/css/style.css")
+  body
+    header
+      nav
+        a(href="/") Home |
+        a(href="/attendees") Attendees |
+        button(onclick="window.location.href='/logout'") Log out
+
+    h2 Update Account
+
+    form(action="/update-account", method="POST")
+      label(for="username") New Username:
+      input(type="text", name="username", value=user, required)
+      br
+      label(for="password") New Password:
+      input(type="password", name="password", placeholder="Leave blank to keep current")
+      br
+      button(type="submit") Update Account
+
+    h3 Delete Account
+    form(action="/delete-account", method="POST", onsubmit="return confirm('Are you sure you want to delete your account?');")
+      button(type="submit") Delete Account

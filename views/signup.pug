@@ -1,0 +1,50 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="utf-8")
+    title Sign Up
+    link(rel="stylesheet", href="/css/style.css")
+  body
+    header
+      nav
+        a(href="/") Home |
+        a(href="/attendees") Attendees |
+        a(href="/update-account") Account |
+        button(onclick="window.location.href='/logout'") Log out
+
+    h2 Add New Attendee
+    form(action="/add-attendee", method="POST")
+      label(for="first_name") First Name:
+      input(type="text", name="first_name", required)
+      br
+      label(for="last_name") Last Name:
+      input(type="text", name="last_name", required)
+      br
+      label(for="street_address") Street:
+      input(type="text", name="street_address", required)
+      br
+      label(for="city") City:
+      input(type="text", name="city", required)
+      br
+      label(for="state") State:
+      input(type="text", name="state", required)
+      br
+      label(for="country") Country:
+      input(type="text", name="country", required)
+      br
+      label(for="phone") Phone:
+      input(type="text", name="phone", required)
+      br
+      label(for="email") Email:
+      input(type="email", name="email", required)
+      br
+      label(for="league_id") League ID:
+      input(type="text", name="league_id", required)
+      br
+      label(for="league_rank") League Rank:
+      input(type="text", name="league_rank", required)
+      br
+      label(for="preferred_position") Preferred Position:
+      input(type="text", name="preferred_position", required)
+      br
+      button(type="submit") Add Attendee

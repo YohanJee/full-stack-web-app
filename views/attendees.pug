@@ -1,0 +1,34 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="utf-8")
+    title Attendees
+    link(rel="stylesheet", href="/css/style.css")
+  body
+    header
+      nav
+        a(href="/") Home |
+        a(href="/signup") Sign Up |
+        a(href="/update-account") My Account |
+        button(onclick="window.location.href='/logout'") Log out
+
+    h2 League of Legends Clash Attendees
+
+    div#filters
+      button(data-status="all") Show All
+      button(data-status="confirmed") Confirmed
+      button(data-status="in progress") In Progress
+
+    div#sort
+      label(for="sort-field") Sort by:
+      select#sort-field
+        option(value="first_name") First Name
+        option(value="last_name") Last Name
+        option(value="state") State
+        option(value="country") Country
+      button#sort-asc Ascending
+      button#sort-desc Descending
+
+    div#attendee-container.flex-list
+
+    script(src="/js/attendees.js")
