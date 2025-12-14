@@ -16,7 +16,6 @@ attendees for a League of Legends Clash event.
 ## How to Run the Project
 
 ### 1. Install dependencies
-```bash
 npm install
 
 ### 2. Create a .env file
