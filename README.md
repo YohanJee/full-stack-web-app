@@ -19,7 +19,7 @@ attendees for a League of Legends Clash event.
 npm install
 
 ### 2. Create a .env file
-Create a .env file in the project root with the following variables:
+Create a .env file in the project root with the following variables:  
 DB_HOST=cse-mysql-classes-02.cse.umn.edu  
 DB_USER=YOUR_DB_USERNAME  
 DB_NAME=YOUR_DB_NAME  
